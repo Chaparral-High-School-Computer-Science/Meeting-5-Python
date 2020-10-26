@@ -21,7 +21,7 @@ print(p1.value)             # When we print p1's value, it will be 1
 # to do when the object is being created:
 """
 class Person:                          # This creates the class
-    def _init_(self, name,age):        # Consider this the blueprint
+    def __init__(self, name,age):        # Consider this the blueprint
         self.name = name               # Assigns the name argument to the name variable
         self.age = age                 # Assigns the age argument to the age variable
 
@@ -36,7 +36,7 @@ print(h1.name)
 # Lets add one to the Person class. Add the one below
 """
 def myfunc(self):
-    print("Hello my name is " + self.name ". I am " + self.age + " years old.")
+    print("Hello my name is " + self.name ". I am " + str(self.age) + " years old.")
 """
 # Now lets call it
 """
